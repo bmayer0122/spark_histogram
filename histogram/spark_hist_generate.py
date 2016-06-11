@@ -8,7 +8,5 @@ nums = sc.parallelize(range(0,10))
 oversample = nums.sample(True, 1000)
 #oversample.count()
 f = open('histogram.txt', 'w')
-f.write(str(oversample.histogram(range(0,10))))
+f.write(str(oversample.histogram(range(0,11))))
 f.close()
-
-
